@@ -25,7 +25,7 @@ jobs:
       - name: Create ZIP package
         run: |
           cd publish
-          zip -r ../dotnet-app.zip
+          zip -r ../dotnet-app.zip .
       - name: Upload ZIP artifact
         uses: actions/upload-artifact@v6.0.0
         with:
