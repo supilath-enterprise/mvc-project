@@ -13,6 +13,7 @@ jobs:
         run: echo "Build Job is executing..."
   deploy:
     runs-on: windows-latest
+    needs: build
     steps:
       - name: deploy job
         run: echo "Deploy Job is executing..."
